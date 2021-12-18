@@ -22,21 +22,38 @@
         margin-top: 25vh;
 }
 
-#bg-di{
-   transform: rotate(45deg);
-   background-color: blue;
-   width: 200%;
+#bg-di {
+  transform: rotate(-6deg);
+    background-color: #0577BE;
+    width: 101%;
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+    right: 34px;
+    top: -19px;
+}
+
+@media (min-width:1800px){
+  #bg-di{
+    height: 794px;
+    right: 115px;
+}
+}
+@media (min-width:1080px) and (max-width: 1460px){
+  #bg-di{
+  top:-31px;
+  right:44px;
+}
 }
 
 
       </style>
   </head>
   <body>
-    <div id = "bg-di">
+    <section class = "container-fluid" id = "page-banner" style="background-image: url(./Assets/Images/Underwater.jpg); overflow:hidden;">
+      <div id = "bg-di">
 
-    </div>
-    <section class = "container-fluid" id = "page-banner" style="background-image: url(./Assets/Images/Underwater.jpg);">
-
+      </div>
       <div class="row item-align-center">
         <div class="text-center Title-Name">
           <h1> Title Name</h1>
