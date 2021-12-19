@@ -13,11 +13,34 @@
         height: 60px;
       }
 
+      select.form-control {
+        border-color:white;
+        color: white;
+        background-color: transparent;
+        height: 60px;
+      }
+
+      textarea.form-control{
+        border-color:white;
+        color: white;
+        background-color: transparent;
+      }
+
+        textarea.form-control::placeholder{
+          color:white;
+        }
+
+        input[type=text]::placeholder,input[type = email]::placeholder,input[type = tel]::placeholder{
+          color:white;
+        }
+
       .btn-transparent{
         background-color: transparent;
         width: 300px;
         height:70px;
         border-color: white;
+        color:white;
+        font-size:25px;
       }
 
        textarea .form-control{
@@ -32,16 +55,13 @@
         color : white;
       }
 
-      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: white;
-}
-
-        p{
+        p
+        {
           font-size: 18px;
         }
 
-        article
-        {
+      article
+      {
         width: 800px;
       }
 
@@ -53,7 +73,7 @@
         color:#0575BA;
       }
       form{
-        height:880px;
+        height:750px;
       }
       .ocean-blue-bg{
         background-color: #0575BA;
@@ -63,7 +83,7 @@
   <body>
     <div class="container-fluid">
       <div class="container">
-        <div class="row align-items-center ">
+        <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="">
             <p><span> T: </span></p>
@@ -84,7 +104,7 @@
                 <input placeholder = "Telephone" class="form-control" type="tel" name="Telephone" value="">
               </div>
               <div class="form-group p-3">
-                <label for="Service"> Service</label>
+
                 <select class="form-control" name="">
                   <option value="">  Photogramatry </option>
                   <option value="">  Photogramatry </option>
@@ -93,11 +113,11 @@
                 </select>
               </div>
               <div class="form-group p-3">
-                <label for="Message"> Message </label>
-                <textarea class = "form-control" name="Message" rows="8" cols="80"></textarea>
+
+                <textarea placeholder = "Message" class = "form-control" name="Message" rows="8" cols="80"></textarea>
               </div>
               <div class="form-group text-right p-3">
-                  <input class = "btn btn-transparent" type="submit" name="submit" value=""/>
+                  <input class = "btn btn-transparent" type="submit" name="submit" value="Send"/>
               </div>
 
             </form>
